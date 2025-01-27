@@ -214,78 +214,56 @@ footer p {
 
 /* Slide in from left */
 
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
+.animate-me-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+  }
+  
+  .animate-me-left.visible {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
 /* Slide in from right */
 
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
+.animate-me-right {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+  }
+  
+  .animate-me-right.visible {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
 /* Slide in from top */
-
-@keyframes slideInTop {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
+.animate-me-top {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+  }
+  
+  .animate-me-bottom.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
 
 /* Slide in from BOTTOM */
 
 
-@keyframes slideInBottom {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+.animate-me-bottom {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+  }
+  
+  .animate-me-bottom.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
 
-
-
-.section-left, .visible {
-    animation: slideInLeft 0.8s ease-out forwards;
-}
-
-.section-right, .visible {
-    animation: slideInRight 0.8s ease-out forwards;
-}
-
-.section-top, .visible {
-    animation: slideInTop 0.8s ease-out forwards;
-}
-
-.section-bottom, .visible {
-    animation: slideInBottom 0.8s ease-out forwards;
-}
 
 /* ------ SECTION ------ */
 
